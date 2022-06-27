@@ -73,3 +73,18 @@ goRight.addEventListener("click", function(){
     imgElements[i].classList.add("active");
     thumbnailElements[i].classList.add("clr_mg");
 });
+
+setInterval(function(){
+    let imgActive = document.querySelector("img.active");
+    let thumbnailClrMg = document.querySelector(".clr_mg");
+    thumbnailClrMg.classList.remove("clr_mg");
+    imgActive.classList.remove("active");
+    i++;
+    console.log(i);
+    if(i == images.length){
+        i = 0;
+    }
+    console.log("Questo è i dopo: " + i);
+    imgElements[i].classList.add("active");
+    thumbnailElements[i].classList.add("clr_mg");
+}, 3000);
