@@ -1,0 +1,24 @@
+.fa-chevron-left, .fa-chevron-right, .fa-circle{
+    font-size: 25px;
+}
+ 
+.top_change{
+    transform: translate(0, -50%);
+}
+
+.w_100{
+    width: 100%;
+}
+
+#img_container img{
+    display: none;
+ }
+ 
+#img_container img.active{
+    display: block;
+ }
+
+ .clr_mg{
+    color: rgb(228, 20, 211);
+ }
+ 
